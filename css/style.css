@@ -1,0 +1,87 @@
+.flex {
+  display: flex;
+}
+.flex__column {
+  flex-direction: column;
+}
+.flex__row {
+  flex-direction: row;
+}
+.flex__spaced {
+  justify-content: space-around;
+}
+.flex__between {
+  justify-content: space-between;
+}
+.flex__center {
+  justify-content: center;
+}
+.flex__align-center {
+  align-items: center;
+  text-align: center;
+}
+.flex__align-end {
+  align-items: flex-end;
+}
+.flex__justify-end {
+  justify-content: flex-end;
+}
+
+body {
+  margin: 0 auto;
+  background: linear-gradient(to right, #076585, #fff);
+}
+
+#title {
+  text-align: center;
+  font-family: "Comfortaa", cursive;
+  font-size: 4rem;
+  padding-top: 50px;
+}
+
+.section {
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Roboto Mono", monospace;
+}
+.section__input {
+  font-size: 1.5rem;
+  padding: 10px;
+  border-radius: 5px;
+  filter: drop-shadow(4px 4px 6px #b9f0de);
+}
+
+.bottom {
+  margin-top: 25px;
+  height: 20vh;
+}
+
+button {
+  margin-top: 25px;
+  height: 50px;
+  width: 100px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: "Comfortaa", cursive;
+  cursor: pointer;
+}
+button:hover {
+  background-color: aquamarine;
+}
+
+footer {
+  font-family: "Comfortaa", cursive;
+  text-align: center;
+}
+
+#reverse {
+  padding-bottom: 50px;
+  cursor: pointer;
+  transform: scale(0.95);
+}
+#reverse:hover {
+  transform: scale(1);
+}
+
+/*# sourceMappingURL=style.css.map */
