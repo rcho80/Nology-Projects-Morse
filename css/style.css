@@ -30,6 +30,7 @@
 body {
   margin: 0 auto;
   background: linear-gradient(to right, #076585, #fff);
+  overflow: hidden;
 }
 
 #title {
@@ -73,15 +74,6 @@ button:hover {
 footer {
   font-family: "Comfortaa", cursive;
   text-align: center;
-}
-
-#reverse {
-  padding-bottom: 50px;
-  cursor: pointer;
-  transform: scale(0.95);
-}
-#reverse:hover {
-  transform: scale(1);
 }
 
 /*# sourceMappingURL=style.css.map */

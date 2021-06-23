@@ -4,6 +4,7 @@
 body {
   margin: 0 auto;
   background: linear-gradient(to right, #076585, #fff);
+  overflow: hidden;
 }
 
 #title {
@@ -55,14 +56,4 @@ footer {
   font-family: 'Comfortaa',
     cursive;
   text-align: center;
-}
-
-#reverse {
-  padding-bottom: 50px;
-  cursor: pointer;
-  transform: scale(0.95);
-
-  &:hover {
-    transform: scale(1);
-  }
 }

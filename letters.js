@@ -130,7 +130,7 @@ export const morseLetters = [{
   },
   {
     key: " ",
-    code: "   "
+    code: " / "
   },
   {
     key: ".",
