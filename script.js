@@ -7,7 +7,6 @@ const textMorse = document.getElementById("text__morse");
 const clear = document.getElementById("btn__clear");
 const morseTxt = document.getElementById("morseTxt");
 
-
 // handle English to morse
 const handleLetters = (keys) => {
   morseLetters.map(key => {
@@ -19,39 +18,28 @@ const handleLetters = (keys) => {
     morseTxt.removeChild(morseTxt.lastChild)
   }
 }
-textEng.addEventListener('keydown', handleLetters);
-
-
-
 //handle Morse to English
 const handleMorse = (keys) => {
-
-  const morseContainer = morseTxt.value;
-
-  const splitted = morseContainer.split(" ");
-
+  const splitted = morseTxt.value.split(" ");
   const container = [];
-
   for (let i = 0; i < splitted.length; i++) {
-    const pop = morseLetters.filter(letter => {
+    morseLetters.filter(letter => {
       letter.code = letter.code.trim();
       if (letter.code === splitted[i]) {
         container.push(letter.key)
       }
     });
   }
-  const finalStr = container.join("");
-  textEng.appendChild(document.createTextNode(finalStr));
-
+  textEng.innerText = container.join("");
 }
-textMorse.addEventListener('click', handleMorse);
-
-
-
-
 // handle Clear button delete All
 const handleClear = () => {
+  morseTxt.innerText = "";
   morseTxt.value = "";
+  textEng.innerText = "";
   textEng.value = "";
 }
+
 clear.addEventListener("click", handleClear);
+textEng.addEventListener('keydown', handleLetters);
+textMorse.addEventListener('click', handleMorse);
