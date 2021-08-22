@@ -27,37 +27,75 @@
   justify-content: flex-end;
 }
 
+html,
 body {
   margin: 0 auto;
-  background: linear-gradient(to right, #076585, #fff);
+  background: #cc95c0;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #7aa1d2, #dbd4b4, #cc95c0);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #7aa1d2, #dbd4b4, #cc95c0);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   overflow: hidden;
 }
 
-#title {
+.header__title {
   text-align: center;
   font-family: "Comfortaa", cursive;
   font-size: 4rem;
   padding-top: 50px;
 }
+@media only screen and (max-width: 576px) {
+  .header__title {
+    font-size: 2rem;
+    padding-top: 10px;
+  }
+}
 
-.section {
+@media only screen and (max-width: 576px) {
+  .main__direction {
+    display: block;
+  }
+}
+.main__section {
   text-align: center;
   font-size: 2rem;
   font-family: "Roboto Mono", monospace;
 }
-.section__input {
+@media only screen and (max-width: 576px) {
+  .main__section--title {
+    font-size: 1.2rem;
+    margin: 1rem;
+  }
+}
+.main__section--input {
   font-size: 1.5rem;
   padding: 10px;
   border-radius: 5px;
   filter: drop-shadow(4px 4px 6px #b9f0de);
+}
+@media only screen and (max-width: 576px) {
+  .main__section--input {
+    font-size: 1.2rem;
+    padding: 5px;
+  }
 }
 
 .bottom {
   margin-top: 25px;
   height: 20vh;
 }
+.bottom__footer {
+  font-family: "Comfortaa", cursive;
+  text-align: center;
+}
+@media only screen and (max-width: 576px) {
+  .bottom__footer {
+    font-size: 0.8rem;
+  }
+}
 
-button {
+.btn {
   margin-top: 25px;
   height: 50px;
   width: 100px;
@@ -67,13 +105,25 @@ button {
   font-family: "Comfortaa", cursive;
   cursor: pointer;
 }
-button:hover {
+.btn:hover {
   background-color: aquamarine;
 }
-
-footer {
-  font-family: "Comfortaa", cursive;
-  text-align: center;
+@media only screen and (max-width: 576px) {
+  .btn {
+    margin: 25px;
+    height: 40px;
+    width: 80px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .btn__submit {
+    position: absolute;
+    bottom: 280px;
+    right: 0px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

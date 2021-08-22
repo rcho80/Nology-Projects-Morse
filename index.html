@@ -1,67 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <title>Morse Code Translator</title>
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap"
+            rel="stylesheet"
+        />
+        <title>Morse Code Translator</title>
+    </head>
 
-  <body>
-    <div class="">
-      <header>
-        <h1 id="title">MORSE CODE TRANSLATOR</h1>
-      </header>
+    <body>
+        <div>
+            <header class="header">
+                <h1 class="header__title">MORSE CODE TRANSLATOR</h1>
+            </header>
 
-      <main class="">
-        <div class="flex flex__spaced">
-          <section class="section" id="section__eng">
-            <h3>ENGLISH</h3>
-            <textarea
-              class="section__input"
-              name="english"
-              id="text__eng"
-              type="text"
-              cols="30"
-              rows="5"
-              placeholder="Enter words here..."
-            ></textarea>
-          </section>
+            <main class="main">
+                <div class="main__direction flex flex__spaced">
+                    <section class="main__section">
+                        <h3 class="main__section--title">ENGLISH</h3>
+                        <textarea
+                            class="main__section--input"
+                            name="english"
+                            id="text__eng"
+                            type="text"
+                            cols="30"
+                            rows="5"
+                            placeholder="Enter words here..."
+                        ></textarea>
+                    </section>
 
-          <button id="btn__clear">CLEAR</button>
+                    <button class="btn btn__clear" id="btn__clear">
+                        CLEAR
+                    </button>
 
-          <section class="section" id="section__morse">
-            <h3>MORSE CODE</h3>
-            <textarea
-              id="morseTxt"
-              type="text"
-              class="section__input"
-              name="morse"
-              cols="30"
-              rows="5"
-              placeholder="Please click Submit when completed..."
-            ></textarea>
-          </section>
+                    <section class="main__section">
+                        <h3 class="main__section--title">MORSE CODE</h3>
+                        <textarea
+                            id="text__morse"
+                            type="text"
+                            class="main__section--input"
+                            name="morse"
+                            cols="30"
+                            rows="5"
+                            placeholder="Please click Submit when completed..."
+                        ></textarea>
+                    </section>
+                </div>
+
+                <div
+                    class="
+                        bottom
+                        flex flex__column flex__align-center flex__between
+                    "
+                >
+                    <button class="btn btn__submit" id="submit__morse">
+                        SUBMIT
+                    </button>
+                    <footer class="bottom__footer">Created by_RC_2021</footer>
+                </div>
+            </main>
         </div>
-
-        <div class="bottom flex flex__column flex__align-center flex__between">
-          <button id="text__morse">SUBMIT</button>
-          <footer class="">Created by_RC_2021</footer>
-        </div>
-      </main>
-    </div>
-    <script type="module" src="script.js" charset="utf-8"></script>
-    <script type="module" src="letters.js" charset="utf-8"></script>
-  </body>
+        <script type="module" src="script.js" charset="utf-8"></script>
+        <script type="module" src="letters.js" charset="utf-8"></script>
+    </body>
 </html>

@@ -1,59 +1,115 @@
 @use "flex"as flex;
+@use "devices" as devices;
 
-
+html,
 body {
-  margin: 0 auto;
-  background: linear-gradient(to right, #076585, #fff);
-  overflow: hidden;
+    margin: 0 auto;
+    background: #cc95c0; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #7aa1d2,
+        #dbd4b4,
+        #cc95c0
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #7aa1d2,
+        #dbd4b4,
+        #cc95c0
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    overflow: hidden;
 }
 
-#title {
-  text-align: center;
-  font-family: 'Comfortaa',
-    cursive;
-  font-size: 4rem;
-  padding-top: 50px;
+.header {
+    &__title {
+        text-align: center;
+        font-family: "Comfortaa", cursive;
+        font-size: 4rem;
+        padding-top: 50px;
+
+        @include devices.phone {
+            font-size: 2rem;
+            padding-top: 10px;
+        }
+    }
 }
 
+.main {
+    &__direction {
+        @include devices.phone {
+            display: block;
+        }
+    }
 
-.section {
-  text-align: center;
-  font-size: 2rem;
-  font-family: 'Roboto Mono',
-    monospace;
+    &__section {
+        text-align: center;
+        font-size: 2rem;
+        font-family: "Roboto Mono", monospace;
 
-  &__input {
-    font-size: 1.5rem;
-    padding: 10px;
-    border-radius: 5px;
-    filter: drop-shadow(4px 4px 6px rgb(185, 240, 222));
+        &--title {
+            @include devices.phone {
+                font-size: 1.2rem;
+                margin: 1rem;
+            }
+        }
 
-  }
+        &--input {
+            font-size: 1.5rem;
+            padding: 10px;
+            border-radius: 5px;
+            filter: drop-shadow(4px 4px 6px rgb(185, 240, 222));
+
+            @include devices.phone {
+                font-size: 1.2rem;
+                padding: 5px;
+            }
+        }
+    }
 }
 
 .bottom {
-  margin-top: 25px;
-  height: 20vh;
+    margin-top: 25px;
+    height: 20vh;
+
+    &__footer {
+        font-family: "Comfortaa", cursive;
+        text-align: center;
+
+        @include devices.phone {
+            font-size: 0.8rem;
+        }
+    }
 }
 
-button {
-  margin-top: 25px;
-  height: 50px;
-  width: 100px;
-  border-radius: 8px;
-  font-size: 1.2rem;
-  font-weight: 600;
-  font-family: 'Comfortaa',
-    cursive;
-  cursor: pointer;
+.btn {
+    margin-top: 25px;
+    height: 50px;
+    width: 100px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: "Comfortaa", cursive;
+    cursor: pointer;
 
-  &:hover {
-    background-color: aquamarine;
-  }
-}
+    &:hover {
+        background-color: aquamarine;
+    }
 
-footer {
-  font-family: 'Comfortaa',
-    cursive;
-  text-align: center;
+    @include devices.phone {
+        margin: 25px;
+        height: 40px;
+        width: 80px;
+        border-radius: 8px;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    &__submit {
+        @include devices.phone {
+            position: absolute;
+            bottom: 280px;
+            right: 0px;
+        }
+    }
 }
