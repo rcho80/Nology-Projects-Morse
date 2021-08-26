@@ -96,6 +96,7 @@ body {
     font-weight: 600;
     font-family: "Comfortaa", cursive;
     cursor: pointer;
+    padding: 10px;
 
     &:hover {
         background-color: aquamarine;
@@ -113,6 +114,7 @@ body {
 
     &__submit {
         position: relative;
+        padding: 10px;
         @include devices.phone {
             position: absolute;
             bottom: 195px;
