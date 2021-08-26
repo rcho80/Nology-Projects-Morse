@@ -111,6 +111,7 @@ body {
     }
 
     &__submit {
+        position: relative;
         @include devices.phone {
             position: absolute;
             bottom: 335px;

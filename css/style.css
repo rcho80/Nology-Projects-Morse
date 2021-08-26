@@ -125,6 +125,9 @@ body {
     font-weight: 600;
   }
 }
+.btn__submit {
+  position: relative;
+}
 @media only screen and (max-width: 576px) {
   .btn__submit {
     position: absolute;
