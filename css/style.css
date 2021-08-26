@@ -134,7 +134,7 @@ body {
 @media only screen and (max-width: 576px) {
   .btn__submit {
     position: absolute;
-    bottom: 195px;
+    bottom: 202px;
     right: 0px;
   }
 }
