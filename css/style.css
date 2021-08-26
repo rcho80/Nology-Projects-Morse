@@ -92,6 +92,12 @@ body {
   margin-top: 25px;
   height: 20vh;
 }
+@media only screen and (max-width: 576px) {
+  .bottom {
+    margin-top: 10px;
+    height: 100px;
+  }
+}
 .bottom__footer {
   font-family: "Comfortaa", cursive;
   text-align: center;
@@ -102,7 +108,7 @@ body {
   }
 }
 
-.btn {
+.btn__clear {
   margin-top: 25px;
   height: 50px;
   width: 100px;
@@ -113,29 +119,41 @@ body {
   cursor: pointer;
   padding: 10px;
 }
-.btn:hover {
+.btn__clear:hover {
   background-color: aquamarine;
 }
 @media only screen and (max-width: 576px) {
-  .btn {
-    margin: 25px;
+  .btn__clear {
+    margin: 25px 142px;
     height: 40px;
     width: 90px;
-    border-radius: 8px;
     font-size: 1rem;
-    font-weight: 600;
-    padding: 5px;
   }
 }
+
 .btn__submit {
+  margin-top: 25px;
+  height: 50px;
+  width: 100px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: "Comfortaa", cursive;
+  cursor: pointer;
+  padding: 10px;
   position: relative;
   padding: 10px;
 }
+.btn__submit:hover {
+  background-color: aquamarine;
+}
 @media only screen and (max-width: 576px) {
   .btn__submit {
-    position: absolute;
-    bottom: 215px;
-    right: 0px;
+    margin: 25px;
+    height: 40px;
+    width: 90px;
+    font-size: 1rem;
+    margin-top: 10px;
   }
 }
 

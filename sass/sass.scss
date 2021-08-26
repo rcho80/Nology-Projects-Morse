@@ -77,6 +77,11 @@ body {
     margin-top: 25px;
     height: 20vh;
 
+    @include devices.phone {
+        margin-top: 10px;
+        height: 100px;
+    }
+
     &__footer {
         font-family: "Comfortaa", cursive;
         text-align: center;
@@ -87,7 +92,7 @@ body {
     }
 }
 
-.btn {
+.btn__clear {
     margin-top: 25px;
     height: 50px;
     width: 100px;
@@ -103,22 +108,35 @@ body {
     }
 
     @include devices.phone {
+        margin: 25px 142px;
+        height: 40px;
+        width: 90px;
+        font-size: 1rem;
+    }
+}
+
+.btn__submit {
+    margin-top: 25px;
+    height: 50px;
+    width: 100px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: "Comfortaa", cursive;
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+    padding: 10px;
+
+    &:hover {
+        background-color: aquamarine;
+    }
+
+    @include devices.phone {
         margin: 25px;
         height: 40px;
         width: 90px;
-        border-radius: 8px;
         font-size: 1rem;
-        font-weight: 600;
-        padding: 5px;
-    }
-
-    &__submit {
-        position: relative;
-        padding: 10px;
-        @include devices.phone {
-            position: absolute;
-            bottom: 215px;
-            right: 0px;
-        }
+        margin-top: 10px;
     }
 }
