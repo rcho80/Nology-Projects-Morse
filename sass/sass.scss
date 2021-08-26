@@ -104,17 +104,18 @@ body {
     @include devices.phone {
         margin: 25px;
         height: 40px;
-        width: 80px;
+        width: 90px;
         border-radius: 8px;
         font-size: 1rem;
         font-weight: 600;
+        padding: 5px;
     }
 
     &__submit {
         position: relative;
         @include devices.phone {
             position: absolute;
-            bottom: 185px;
+            bottom: 195px;
             right: 0px;
         }
     }
