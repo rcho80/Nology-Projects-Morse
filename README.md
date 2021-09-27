@@ -1,7 +1,3 @@
 # Nology-Projects-Morse
 
-What was your motivation?
-Why did you build this project?
-What problem does it solve?
-What did you learn?
-What makes your project stand out? If your project has a lot of features, consider adding a "Features" section and listing them here.
+Nology-Projects-Morse was created with HTML, CSS and Javascript to help translate Morse Code inputs to Standard English and vice versa
